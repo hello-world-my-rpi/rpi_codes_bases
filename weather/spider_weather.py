@@ -10,7 +10,7 @@ def get_url():
         }
         rqst = request.Request(url = url,headers = headers,method = 'POST')
         response = request.urlopen(rqst,timeout=20)
-        weather_url = response.read().decode('utf-8')[9489:11753]
+        weather_url = response.read().decode('utf-8')
     except:
         print("Can't opem the website")
         return None
