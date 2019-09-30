@@ -3,10 +3,10 @@ import re
 
 
 def get_news():
-html_home = get_url('home')
-html_world = get_url('world')
+    html_home = get_url('home')
+    html_world = get_url('world')
 
-if html_home or html_world:
+    if html_home or html_world:
         pattern_home = '''<li><a href="https://news.sina.com.cn/.*?>(.*?)</a></li>'''
         pattern_world = '''<h2><a href="http.*?://news.sina.com.cn/.*?target="_blank".*?>(.*?)</a></h2>'''
                        
