@@ -21,7 +21,7 @@ def get_url(place='home'):
         proxy_handler = request.ProxyHandler(proxy)
         opener = request.build_opener(proxy_handler)
         response = opener.open(url,timeout=20)
-        news_url = response.read().decode('utf-8')[58122:85073]
+        news_url = response.read().decode('utf-8')
         return news_url
     except:
         print('Can not open')
