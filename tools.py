@@ -67,7 +67,7 @@ class News():
         self.news = list(self.get_news())
 
     def __call__(self):
-        self.news = sel.get_news()
+        self.news = self.get_news()
 
     def get_news(self):
         html_home = self.get_url('home')
